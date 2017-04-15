@@ -1,5 +1,5 @@
 var inquirer = require('inquirer');
-var flashCards = require('./flashCards.js');
+var flashCards = require('./flashcards.js');
 var questions = require('./questions.js').questions;
 
 var closeQuestions = [];
@@ -8,8 +8,7 @@ for (var i = 0; i < questions.length; i++) {
 	var q = new flashCards.ClozeCard(questions[i].full, questions[i].cloze);
 	closeQuestions.push(q);
 }
-
-
+console.log(closeQuestions)
 var currentQuestion = 0;
 var answerRight = 0;
 var answerWrong = 0;

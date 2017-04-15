@@ -1,11 +1,5 @@
 var flashCards = require('./flashCards.js');
 
-/* 
-*
-* Basic Flashcard Tests
-*
-*/
-
 var firstPresident = new flashCards.BasicCard('Who was the first president of the United States?', 'George Washington');
 console.log(firstPresident.front);
 console.log(firstPresident.back); 
@@ -25,12 +19,6 @@ var nextOlympics = new flashCards.BasicCard('What city will host the next winter
 console.log(nextOlympics.front);
 console.log(nextOlympics.back);
 console.log('-------------------------------------');
-
-/* 
-*
-* Cloze-Deleted Flashcard Tests
-*
-*/
 
 firstPresident = new flashCards.ClozeCard('George Washington was the first president of the United States.', 'George Washington');
 console.log(firstPresident.full);
